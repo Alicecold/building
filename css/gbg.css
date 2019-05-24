@@ -1,0 +1,121 @@
+
+body{
+    background-color: #171314;
+    font-size: 70px;
+    font-family: raleway;
+    margin: 0;
+}
+
+#wrap{
+    background: -moz-linear-gradient(top, #354d73 0%, #171314 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #354d73 0%,#171314 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #354d73 0%,#171314 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354d73', endColorstr='#171314',GradientType=0 );
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a{
+    color: #fbedb0;
+    transition: 1s color ease;
+    text-decoration: none;
+}
+a:hover{
+    color: #85643E;
+}
+
+a:link{
+    color: #fbedb0;
+}
+
+@font-face{
+    font-family: raleway;
+    src: url("../assets/fonts/raleway_thin-webfont.ttf");
+}
+
+#content p{
+    color: #6EAE9D;
+    font-size: 20px;
+}
+.name h1{
+    color: #fbedb0;
+    margin: 0;
+    font-size: 60px;
+}
+
+.name{
+    position: relative;
+    right: 2px;
+    border-bottom: 2px solid #fbedb0;
+    padding-right: 10vw;
+    padding-left: 10px;
+    margin-bottom: 5vh;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+
+    bottom: 0;
+    width: 99vw;
+    padding: 5px;
+    margin-left: 8px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fbedb0;
+}
+
+.nav a:link{
+    color: #fbedb0;
+    animation-name: colorshift;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-play-state: running;
+    transition: 1s color ease;
+}
+
+.anim1{
+    animation-delay: 0.2s;
+}
+
+.anim2{
+    animation-delay: 0.4s;
+}
+
+.anim3{
+    animation-delay: 0.8s;
+}
+
+.nav:hover > a{
+    animation: 0;
+}
+
+.nav:hover > a:hover{
+    color: #6EAE9D;
+}
+
+.nav:hover > a:link{
+    color: #fbedb0;
+}
+
+@keyframes colorshift {
+    70% {color: #fbedb0;}
+    75%  {color: #85643E;}
+    80% {color: #6EAE9D;}
+    90% {color: #fbedb0}
+}
